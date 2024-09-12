@@ -1,0 +1,59 @@
+---
+import ExperienciaItems from "./ExperienciaItems.astro"
+
+const EXPERIENCIA =[
+    {
+       date :  'Julio 2024',
+       title : 'Desarrollador Web - Pasantias',
+       company : 'BANCO GUAYAQUIL',
+       city : 'Ecuador-Guayaquil',
+       description : 'Diseño, implementación y mantenimiento de soluciones para la gestión de la información en el Departamento de Gobierno de Datos, utilizando herramientas como HTML5, JavaScript y frameworks como Bootstrap y Foundation',
+       link:'',
+    },
+    {
+       date :  'Noviembre 2023',
+       title : 'Customer Success - Punto de venta',
+       company : 'CONTIFICO - SIIGO',
+       city : 'Ecuador-Guayaquil',
+       description : 'Implementación y configuración de bases de datos MySQL con SQLyog para instalar puntos de venta, capacitación remota sobre el uso del software POS CONTIFICO, activación y ajuste del sistema de facturación, y coordinación de reuniones para documentar y facilitar la integración de APIs y el seguimiento de la implementación del software CONTIFICO POS.',
+       link:'',
+    },
+    {
+       date :  'Septiembre 2021',
+       title : 'Customer Success - Implementacion sistema nube',
+       company : 'CONTIFICO - SIIGO',
+       city : 'Ecuador-Guayaquil',
+       description : 'Coordinación y gestión de sesiones formativas para integrar el sistema en la nube de CONTIFICO con nuevos clientes. Organización de sesiones remotas para resolver dudas sobre el software. Brindé asistencia completa durante todo el proceso de implementación, asegurando que los clientes comprendieran y dominaran el sistema.',
+       link:'',
+    },
+    {
+       date :  'Marzo 2021',
+       title : 'Customer Success - support',
+       company : 'CONTIFICO - SIIGO',
+       city : 'Ecuador-Guayaquil',
+       description : 'Gestión eficiente de solicitudes de soporte mediante ZENDESK, incluyendo conexiones remotas para resolver problemas en los dispositivos de los clientes. Organización de reuniones personalizadas de soporte para abordar las necesidades específicas en sesiones de una hora.',
+       link:'',
+    },
+    {
+       date :  'Enero 2018',
+       title : 'Pasantías de bachillerato',
+       company : 'UNION VINICOLA INTERNACIONAL',
+       city : 'Ecuador-Guayaquil',
+       description : 'Examinar con precisión y registrar minuciosamente la información de las facturas en la sólida base de datos de la empresa, garantizando una gestión eficiente y confiable de los registros financieros.',
+       link:'',
+    }
+]
+
+---
+<ol class="relative mt-16">                  
+    {
+        EXPERIENCIA.map(experiencia =>
+            (
+                <li class="">
+                    <ExperienciaItems {...experiencia}/>
+                </li>
+            )
+        )
+    }
+</ol>
+
